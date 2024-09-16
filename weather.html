@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather - Farm Smart</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script><style>
+        /* Weather Page Styling */
+.weather {
+    padding: 2rem;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.weather h1 {
+    color: #004d40;
+    margin-bottom: 1.5rem;
+}
+
+.weather-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.weather-container input {
+    padding: 0.5rem;
+    border: 1px solid #004d40;
+    border-radius: 4px;
+    width: 250px;
+}
+
+.weather-container button {
+    background-color: #004d40;
+    color: #ffffff;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.weather-container button:hover {
+    background-color: #00796b;
+}
+
+.weather-data {
+    margin-top: 1.5rem;
+    text-align: left;
+    background-color: #e0f2f1;
+    border: 1px solid #004d40;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="tips.html">Tips</a></li>
+                <li><a href="warning.html">Warnings</a></li>
+                <li><a href="weather.html" class="active">Weather</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="weather">
+        <h1>Weather Information</h1>
+        <div class="weather-container">
+            <input type="text" id="cityInput" placeholder="Enter city">
+            <button onclick="getWeather()">Get Weather</button>
+            <div id="weatherData" class="weather-data">
+                <!-- Weather data will be displayed here -->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Smart agriculture system</p>
+    </footer>
+
+    <script src="weather.js"></script>
+</body>
+</html>

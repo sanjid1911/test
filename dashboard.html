@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmers' Dashboard</title>
+    <link rel="stylesheet" href="dstyle.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Farmers' Dashboard</h1>
+        <label for="region">Select Region:</label>
+        <select id="region">
+            <option value="region1">Dhaka</option>
+            <option value="region2">Chittogong</option>
+            <option value="region3">Khulna</option>
+            <option value="region4">Sylhet</option>
+        </select>
+        <button onclick="showChart('soilMoisture')">Soil Moisture</button>
+        <button onclick="showChart('precipitation')">Precipitation</button>
+        <button onclick="showChart('temperature')">Temperature</button>
+        <button onclick="showChart('windSpeed')">Wind Speed</button>
+        <button onclick="showChart('solarRadiation')">Solar Radiation</button>
+        <button onclick="showChart('soilNutrients')">Soil Nutrients</button>
+        
+        <div id="soilMoistureContainer" class="chart-container">
+            <canvas id="soilMoistureChart"></canvas>
+        </div>
+        <div id="precipitationContainer" class="chart-container">
+            <canvas id="precipitationChart"></canvas>
+        </div>
+        <div id="temperatureContainer" class="chart-container">
+            <canvas id="temperatureChart"></canvas>
+        </div>
+        <div id="windSpeedContainer" class="chart-container">
+            <canvas id="windSpeedChart"></canvas>
+        </div>
+        <div id="solarRadiationContainer" class="chart-container">
+            <canvas id="solarRadiationChart"></canvas>
+        </div>
+        <div id="soilNutrientsContainer" class="chart-container">
+            <canvas id="soilNutrientsChart"></canvas>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

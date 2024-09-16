@@ -1,0 +1,102 @@
+body{
+    font-family: 'Nunito Sans', sans-serif;
+    width: 100%;
+    margin: 0;
+}
+.container{
+   max-width: 1152px;
+    margin: 0 auto; 
+    
+}
+header{
+    height: 100vh;
+    position: relative;
+    background:linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('../images/inf.jpeg');
+    background-color:dimgray;
+    background-size: cover;
+    background-position: center;
+}
+.front{
+    color: aliceblue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    
+}
+.btn{
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    border: 2px solid white;
+    background: transparent;
+    color: aliceblue;
+    cursor: pointer;   
+}
+.cv {
+    text-decoration: none;
+    color: white;
+}
+.scroll-down i{
+    width: 30px;
+    height: 50px;
+    border: 2px solid white;
+    background: transparent;
+    cursor: pointer;
+    border-radius: 25px;
+    -webkit-animation: bounce 2s alternate-reverse;
+    animation: bounce 2s alternate-reverse infinite;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+@keyframes bounce {
+    from{
+        top: 50px;
+    }
+    to{
+        top: 0;
+    }
+}
+.scroll-down i::after{
+    content: '';
+    top: 10px;
+    right: 12px;
+    height: 10px;
+    width: 0px;
+    border: 2px solid white;
+    cursor: pointer;
+    position: absolute;
+}
+.scroll-down{
+    position: absolute;
+    bottom: 15vh;
+    width: 100%;
+    text-align: center;
+}
+.section{
+    padding:1rem 0;
+}
+.flex{
+    display: flex;
+}
+.about-img img{
+    height: 400px;
+    border: 3px solid gray;
+    
+}
+.about-me{
+    margin-left: 40px;
+}
+.about-txt{
+    text-align: justify;
+}
+.social-icon a{
+    text-decoration: none;
+    color: deeppink;
+    font-size: 1.5rem;
+    padding: 10px;
+}
+.text-align{
+    text-align: center;
+}

@@ -1,0 +1,88 @@
+/* General Styling */
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f9;
+}
+
+header {
+    background: #004d40;  /* Dark Teal */
+    color: #ffffff;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1.5rem;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a.active, nav ul li a:hover {
+    background-color: #26a69a; /* Lighter teal */
+    border-radius: 4px;
+}
+
+footer {
+    background: #004d40;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Tips Section Styling */
+.tips {
+    padding: 2rem;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.tips h1 {
+    color: #004d40;
+    margin-bottom: 1.5rem;
+}
+
+.tips-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.tip-card {
+    background: #e0f2f1; /* Light teal background */
+    border: 1px solid #004d40; /* Dark teal border */
+    border-radius: 8px;
+    padding: 1.5rem;
+    width: 250px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tip-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.tip-card h2 {
+    color: #004d40;
+    margin-top: 0;
+}
+
+.tip-card p {
+    color: #333;
+}
